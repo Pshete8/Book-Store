@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: collection_development
+  pool: 5
+  username: pooja
+  password: root
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: collection_test
+  pool: 5
+  username: pooja
+  password: root
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: collection_production
+  pool: 5
+  username: pooja
+  password: root

@@ -1,0 +1,10 @@
+<div class="col-md-8 col-md-offset-2">
+	<div class="book-show">
+<h2><%= @book.title %></h2>
+<p><h3><%= @book.description %></h3></p>
+
+<%= link_to "Back", root_path, class: "btn btn-default" %>
+<%= link_to "Edit", edit_book_path(@book), class: "btn btn-default" %>
+<%= link_to "Delete", book_path(@book), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-default" %> 
+	</div>
+</div>

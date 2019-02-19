@@ -1,0 +1,17 @@
+<h1> Books Store </h1>
+
+
+<div class="col-med-4 col-md-offset-8">
+<%= link_to "Add a Book", new_book_path, class: "btn btn-primary" %>
+</div>
+
+
+<% @books.each do |book| %>
+
+	<div class="col-md-4">
+		<h2><%= book.title %></h2>
+	<%= link_to "View Book", book_path(book), class: "btn btn-default" %>
+	</div>
+	
+<% end %>
+
